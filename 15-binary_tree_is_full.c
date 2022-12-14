@@ -30,12 +30,11 @@ void check_full(const binary_tree_t *tree, int *ptr)
 	{
 		if ((tree->left && tree->right))
 		{
+			*ptr = 1;
 			check_full(tree->left, ptr);
 			check_full(tree->right, ptr);
 		}
 		else if ((tree->left || tree->right))
 			*ptr = 0;
-		else
-			*ptr = 1;
 	}
 }
