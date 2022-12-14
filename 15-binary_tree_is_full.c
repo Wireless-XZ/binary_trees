@@ -36,5 +36,7 @@ void check_full(const binary_tree_t *tree, int *ptr)
 		}
 		else if ((tree->left || tree->right))
 			*ptr = 0;
+		else
+			*ptr = 1;
 	}
 }
