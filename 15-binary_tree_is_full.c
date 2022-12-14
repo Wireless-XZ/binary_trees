@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 
-void check_full (const binary_tree_t *tree, int *ptr);
+void check_full(const binary_tree_t *tree, int *ptr);
 
 /**
  * binary_tree_is_full -  a function that checks if a binary tree is ful
@@ -19,8 +19,12 @@ int binary_tree_is_full(const binary_tree_t *tree)
 	return (full);
 }
 
-
-void check_full (const binary_tree_t *tree, int *ptr)
+/**
+ * check_full - checks if a node is free
+ * @tree: a pointer to the node to check
+ * @ptr: a pointer to record if full or not
+ */
+void check_full(const binary_tree_t *tree, int *ptr)
 {
 	if (tree)
 	{
